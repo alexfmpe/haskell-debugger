@@ -760,7 +760,7 @@ dropEnd i xs
     where f (a:as) (_:bs) = a : f as bs
           f _ _ = []
 
-#if !MIN_VERSION_ghc(10,1,0)
+#if !MIN_VERSION_ghc(9,14,2)
 deriving instance Ord PkgDbRef
 deriving instance Ord PackageDBFlag
 #endif
